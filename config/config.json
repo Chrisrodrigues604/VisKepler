@@ -1,6 +1,7 @@
 {
-  "siteTitle": "VisKepler",
-  "websiteTitle": "My SisKepler App",
+  "siteTitle": "UBS Locattion-Allocation",
+  "websiteTitle": "Maps",
+  "about": "O projeto UBS Location-Allocation tem por objetivo auxiliar a tomada de decisão na área de saúde pública no aspecto da atenção primária. Para isso, o [NUPEC.lab] tem por objetivo desenvolver um sistema de apoio à decisão que permita uma visão geral sobre cobertura das unidades básicas de saúde e policlínicas no território brasileiro.\nDentre as etapas do desenvolvimento do sistema estão:\n - Modelar e consolidar bases de dados sobre a cobertura e acessibilidade das UBSs.\n - Criar uma infraestrutura de software robusta na forma de uma API.\n - Desenvolver uma interface de visualização intuitiva.\n - Demonstrar a viabilidade técnica do sistema de apoio à decisão.\n - Consolidar referencial teórico e modelos de alocação e localização para serviços de saúde.",
   "maps": [
     {
       "data_id": "rowek3uu",
