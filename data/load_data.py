@@ -9,8 +9,11 @@ def read_geojsons(data_path):
     geojson_files = [f for f in only_files if f.lower().endswith('.geojson')]
     
     geojsons = {}
-    for geojson_file in geojson_files:
-        with open(os.path.join(data_path, geojson_file), 'r') as f:
-            geojsons[geojson_file] = gpd.read_file(f)
+    for geojson_file in os.listdir(directory):
+        if geojson_file.endswith('.geojson'):
+            file_path = os.path.join(directory, geojson_file)
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    geojsons[geojson_file] = gpd.read_file(f)
             
     return geojsons
