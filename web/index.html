@@ -192,6 +192,15 @@
       <iframe id="mapFrame" src="" class="map-iframe"></iframe>
     </div>
   </div>
+
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+        <p id="modal-text">
+        </p>
+      </div>
+  </div>
+
   <script>
     function changeMap(url) {
       document.getElementById('mapFrame').src = url;
