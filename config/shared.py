@@ -25,5 +25,6 @@ def read_configs(config_path):
 
 
 def load_user_config():
-    with open("./config/config.json") as f:
-        return json.load(f)
+    try:
+        with open("./config/config.json", "r", encoding="utf-8") as f:
+            return json.load(f)
