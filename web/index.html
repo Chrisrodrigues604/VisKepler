@@ -222,6 +222,7 @@
         const response = await fetch('/get_config');
         const data = await response.json();
         document.getElementById('site-title').innerText = data.siteTitle;
+        document.getElementById('modal-text').innerText = data.about;    
         const sidebarLinks = document.getElementById('sidebar-links');
 
         if (data.maps.length > 0) {
