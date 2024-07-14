@@ -2,3 +2,4 @@ data/*.geojson
 **/__pycache__/
 config/*.json
 !config/config.json
+venv/
