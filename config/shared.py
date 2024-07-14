@@ -12,9 +12,11 @@ def read_configs(config_path):
     configs = []
 
     for json_file in json_files:
-        with open(os.path.join(config_path, json_file), "r") as f:
-            config = json.load(f)
-            configs.append(config)
+        file_path = os.path.join(config_path, json_file)
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                config = json.load(f)
+                configs.append(config)
     return configs
 
 
