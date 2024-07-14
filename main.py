@@ -38,6 +38,7 @@ def populate_config():
     global global_maps
     user_config = load_user_config()
     global_config["siteTitle"] = user_config["siteTitle"]
+    global_config["about"] = user_config["about"]
     # Also responsable to load map data
     global_maps = read_geojsons("./data")
 
