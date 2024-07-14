@@ -271,6 +271,14 @@
     //}
 
     document.addEventListener('DOMContentLoaded', fetchConfig);
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('infoModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+
   </script>
 </body>
 
