@@ -261,6 +261,15 @@
       alert('Information about the maps will be shown here.');
     }
 
+    function closeModal() {
+      const modal = document.getElementById('infoModal');
+      modal.style.display = 'none';
+    }
+
+    //function showInfo() { 
+    //  alert('Information about the maps will be shown here.');
+    //}
+
     document.addEventListener('DOMContentLoaded', fetchConfig);
   </script>
 </body>
