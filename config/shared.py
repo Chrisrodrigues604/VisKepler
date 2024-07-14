@@ -17,6 +17,10 @@ def read_configs(config_path):
             with open(file_path, "r", encoding="utf-8") as f:
                 config = json.load(f)
                 configs.append(config)
+        except json.JSONDecodeError as e:
+            print(f"Error decoding JSON from file {file_path}: {e}")
+        except Exception as e:
+            print(f"Error reading file {file_path}: {e}")
     return configs
 
 
