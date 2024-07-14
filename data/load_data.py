@@ -15,5 +15,8 @@ def read_geojsons(data_path):
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     geojsons[geojson_file] = gpd.read_file(f)
-            
+            except UnicodeDecodeError as e:
+                print(f"Error decoding file {file_path}: {e}")
+            except Exception as e:
+                print(f"Error reading file {file_path}: {e}")
     return geojsons
