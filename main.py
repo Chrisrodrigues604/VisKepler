@@ -81,6 +81,9 @@ populate_config()
 app = FastAPI()
 
 
+app.mount("/public", StaticFiles(directory="public"), name="public")
+
+
 app.mount("/assets", StaticFiles(directory="web/assets"), name="assets")
 
 
