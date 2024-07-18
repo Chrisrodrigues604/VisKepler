@@ -280,13 +280,13 @@
       }
     }    
 
-    function showInfo() {
-      const modal = document.getElementById('infoModal');
+    function showModal(modalId) {
+      const modal = document.getElementById(modalId);
       modal.style.display = 'flex';
     }
 
-    function closeModal() {
-      const modal = document.getElementById('infoModal');
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
       modal.style.display = 'none';
     }
 
