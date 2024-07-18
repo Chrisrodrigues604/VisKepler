@@ -262,7 +262,7 @@
         const infoItem = document.createElement('li');
         const infoLink = document.createElement('a');
         infoLink.href = '#';
-        infoLink.onclick = showInfo;
+        infoLink.onclick = () => showModal('infoModal');
         infoLink.innerHTML = '<i class="fa fa-circle-info"></i><span class="link-text">Info</span>';
         infoItem.appendChild(infoLink);
         sidebarLinks.appendChild(infoItem);
